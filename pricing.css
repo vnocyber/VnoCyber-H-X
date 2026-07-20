@@ -1,0 +1,1619 @@
+/* ==========================================================
+   PRICING PAGE
+   VnoCyber H-X
+==========================================================*/
+
+/* ==========================================================
+   HERO
+==========================================================*/
+
+.pricing-hero{
+
+    position:relative;
+
+    padding-top:180px;
+
+    padding-bottom:110px;
+
+    overflow:hidden;
+
+}
+
+.pricing-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at top,
+
+    rgba(0,217,255,.12),
+
+    transparent 60%);
+
+    pointer-events:none;
+
+}
+
+.pricing-hero .section-title{
+
+    margin-bottom:0;
+
+}
+
+.pricing-hero h1{
+
+    font-size:68px;
+
+    font-weight:900;
+
+    margin-top:22px;
+
+    line-height:1.1;
+
+}
+
+.pricing-hero p{
+
+    max-width:760px;
+
+    margin:28px auto 0;
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+/* ==========================================================
+   PRICING LIST
+==========================================================*/
+
+.pricing-list{
+
+    position:relative;
+
+}
+
+.pricing-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:28px;
+
+}
+
+/* ==========================================================
+   CARD
+==========================================================*/
+
+.pricing-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:rgba(0,217,255,.45);
+
+    box-shadow:
+
+    0 20px 60px rgba(0,217,255,.18);
+
+}
+
+/* ==========================================================
+   BORDER LIGHT
+==========================================================*/
+
+.pricing-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+    135deg,
+
+    rgba(0,217,255,.10),
+
+    transparent,
+
+    rgba(124,58,237,.10)
+
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.pricing-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ==========================================================
+   BADGE
+==========================================================*/
+
+.pricing-badge{
+
+    width:max-content;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(0,217,255,.10);
+
+    border:1px solid rgba(0,217,255,.25);
+
+    color:var(--primary);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:22px;
+
+}
+
+/* ==========================================================
+   POPULAR
+==========================================================*/
+
+.popular{
+
+    border:2px solid var(--primary);
+
+    box-shadow:
+
+    0 0 35px rgba(0,217,255,.25);
+
+}
+
+.unlimited{
+
+    border:2px solid #7c3aed;
+
+    box-shadow:
+
+    0 0 35px rgba(124,58,237,.25);
+
+}
+
+.popular-tag{
+
+    position:absolute;
+
+    top:18px;
+
+    right:-42px;
+
+    width:160px;
+
+    text-align:center;
+
+    padding:8px 0;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    transform:rotate(45deg);
+
+    background:linear-gradient(
+
+    90deg,
+
+    var(--primary),
+
+    var(--secondary)
+
+    );
+
+    color:#fff;
+
+}
+/* ==========================================================
+   HEADER
+==========================================================*/
+
+.pricing-header{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.pricing-header h3{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+    color:var(--white);
+
+}
+
+.pricing-header h1{
+
+    font-size:48px;
+
+    font-weight:900;
+
+    margin-bottom:15px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #7c3aed
+
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.pricing-header p{
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    min-height:70px;
+
+}
+
+/* ==========================================================
+   FEATURE LIST
+==========================================================*/
+
+.pricing-card ul{
+
+    margin-bottom:35px;
+
+}
+
+.pricing-card ul li{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:16px;
+
+    padding-left:30px;
+
+    color:var(--text);
+
+    line-height:1.6;
+
+}
+
+.pricing-card ul li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    box-shadow:
+
+        0 0 12px var(--primary),
+
+        0 0 25px var(--primary);
+
+}
+
+/* ==========================================================
+   ACTION
+==========================================================*/
+
+.pricing-action{
+
+    margin-top:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.pricing-action a{
+
+    width:100%;
+
+    justify-content:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================================
+   BUTTON EFFECT
+==========================================================*/
+
+.pricing-action .btn-primary{
+
+    box-shadow:
+
+        0 0 25px rgba(0,217,255,.35);
+
+}
+
+.pricing-action .btn-primary:hover{
+
+    box-shadow:
+
+        0 0 45px rgba(0,217,255,.60);
+
+}
+
+.pricing-action .btn-secondary{
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.pricing-action .btn-secondary:hover{
+
+    background:rgba(0,217,255,.08);
+
+}
+
+/* ==========================================================
+   PRICE GLOW
+==========================================================*/
+
+.pricing-card:hover .pricing-header h1{
+
+    filter:drop-shadow(
+
+        0 0 14px rgba(0,217,255,.45)
+
+    );
+
+}
+
+/* ==========================================================
+   HOVER LIGHT
+==========================================================*/
+
+.pricing-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    left:-120px;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(0,217,255,.18);
+
+    filter:blur(70px);
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.pricing-card:hover::after{
+
+    opacity:1;
+
+}
+
+/* ==========================================================
+   BEST SELLER
+==========================================================*/
+
+.popular{
+
+    transform:scale(1.04);
+
+}
+
+.popular:hover{
+
+    transform:scale(1.07) translateY(-10px);
+
+}
+
+/* ==========================================================
+   UNLIMITED
+==========================================================*/
+
+.unlimited .pricing-header h1{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #7c3aed,
+
+        #00d9ff
+
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.unlimited:hover{
+
+    box-shadow:
+
+        0 0 70px rgba(124,58,237,.35);
+
+}
+/* ==========================================================
+   COMPARISON SECTION
+==========================================================*/
+
+.comparison{
+
+    position:relative;
+
+}
+
+.comparison-wrapper{
+
+    overflow-x:auto;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.18);
+
+}
+
+/* ==========================================================
+   TABLE
+==========================================================*/
+
+.comparison-table{
+
+    width:100%;
+
+    min-width:950px;
+
+    border-collapse:collapse;
+
+}
+
+.comparison-table thead{
+
+    background:rgba(0,217,255,.08);
+
+}
+
+.comparison-table th{
+
+    padding:22px;
+
+    text-align:center;
+
+    font-size:17px;
+
+    font-weight:800;
+
+    color:#ffffff;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.comparison-table th:first-child{
+
+    text-align:left;
+
+    min-width:220px;
+
+}
+
+/* ==========================================================
+   BODY
+==========================================================*/
+
+.comparison-table td{
+
+    padding:20px 22px;
+
+    text-align:center;
+
+    color:var(--text);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    transition:.3s;
+
+}
+
+.comparison-table td:first-child{
+
+    text-align:left;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   ROW EFFECT
+==========================================================*/
+
+.comparison-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.comparison-table tbody tr:hover{
+
+    background:rgba(0,217,255,.06);
+
+}
+
+.comparison-table tbody tr:hover td{
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   COLUMN HIGHLIGHT
+==========================================================*/
+
+.comparison-table th:nth-child(4),
+
+.comparison-table td:nth-child(4){
+
+    background:rgba(0,217,255,.08);
+
+}
+
+.comparison-table th:last-child,
+
+.comparison-table td:last-child{
+
+    background:rgba(124,58,237,.08);
+
+}
+
+/* ==========================================================
+   CHECKMARK
+==========================================================*/
+
+.comparison-table td{
+
+    position:relative;
+
+}
+
+.comparison-table td:has(> .check){
+
+    color:#39ff88;
+
+}
+
+.check{
+
+    color:#39ff88;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   SCROLLBAR
+==========================================================*/
+
+.comparison-wrapper::-webkit-scrollbar{
+
+    height:10px;
+
+}
+
+.comparison-wrapper::-webkit-scrollbar-track{
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50px;
+
+}
+
+.comparison-wrapper::-webkit-scrollbar-thumb{
+
+    border-radius:50px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+}
+
+/* ==========================================================
+   TABLE GLOW
+==========================================================*/
+
+.comparison-wrapper:hover{
+
+    border-color:rgba(0,217,255,.30);
+
+    box-shadow:
+
+        0 0 45px rgba(0,217,255,.12);
+
+}
+/* ==========================================================
+   WHY CHOOSE US
+==========================================================*/
+
+.why-us{
+
+    position:relative;
+
+}
+
+.why-us .feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.why-us .feature-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:38px;
+
+    border-radius:26px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(22px);
+
+    transition:.4s;
+
+}
+
+.why-us .feature-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(0,217,255,.35);
+
+    box-shadow:
+
+        0 20px 60px rgba(0,217,255,.18);
+
+}
+
+.why-us .feature-card h3{
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+    font-weight:800;
+
+}
+
+.why-us .feature-card p{
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+}
+
+.why-us .feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(0,217,255,.08),
+
+        transparent,
+
+        rgba(124,58,237,.08)
+
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.why-us .feature-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ==========================================================
+   FAQ
+==========================================================*/
+
+.faq{
+
+    position:relative;
+
+}
+
+.faq-list{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.faq-item{
+
+    margin-bottom:18px;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    border-color:rgba(0,217,255,.35);
+
+    box-shadow:
+
+        0 15px 40px rgba(0,217,255,.12);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    padding:25px 30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+.faq-question::after{
+
+    content:"+";
+
+    font-size:28px;
+
+    color:var(--primary);
+
+    transition:.3s;
+
+}
+
+.faq-answer{
+
+    display:none;
+
+    padding:0 30px 28px;
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+}
+
+.faq-answer.active{
+
+    display:block;
+
+}
+
+.faq-item.active .faq-question::after{
+
+    content:"−";
+
+}
+
+/* ==========================================================
+   CTA
+==========================================================*/
+
+.cta{
+
+    position:relative;
+
+}
+
+.cta-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:90px 60px;
+
+    text-align:center;
+
+    border-radius:32px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(0,217,255,.08),
+
+        rgba(124,58,237,.08)
+
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(24px);
+
+}
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    top:-160px;
+
+    right:-160px;
+
+    border-radius:50%;
+
+    background:rgba(0,217,255,.12);
+
+    filter:blur(80px);
+
+}
+
+.cta-box h2{
+
+    position:relative;
+
+    font-size:48px;
+
+    font-weight:900;
+
+    margin-bottom:20px;
+
+}
+
+.cta-box p{
+
+    position:relative;
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+}
+
+.cta-action{
+
+    position:relative;
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-action a{
+
+    min-width:240px;
+
+}
+/* ==========================================================
+   FOOTER
+==========================================================*/
+
+.vhx-footer{
+
+    position:relative;
+
+    margin-top:120px;
+
+    padding:90px 0 30px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(22px);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1.2fr;
+
+    gap:50px;
+
+}
+
+.footer-brand img{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    margin-bottom:22px;
+
+    box-shadow:0 0 35px rgba(0,217,255,.25);
+
+}
+
+.footer-brand h2{
+
+    font-size:32px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-brand p{
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+}
+
+.footer-menu h3,
+
+.footer-service h3,
+
+.footer-contact h3{
+
+    margin-bottom:24px;
+
+    font-size:22px;
+
+}
+
+.footer-menu a,
+
+.footer-contact a{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    color:var(--muted);
+
+    transition:.35s;
+
+}
+
+.footer-menu a:hover,
+
+.footer-contact a:hover{
+
+    color:var(--primary);
+
+    padding-left:8px;
+
+}
+
+.footer-service p{
+
+    margin-bottom:15px;
+
+    color:var(--muted);
+
+}
+
+.footer-bottom{
+
+    margin-top:70px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-bottom p{
+
+    color:var(--muted);
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   BACK TO TOP
+==========================================================*/
+
+#backToTop{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    z-index:999;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+    box-shadow:0 0 30px rgba(0,217,255,.35);
+
+    transition:.35s;
+
+}
+
+#backToTop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#backToTop:hover{
+
+    transform:translateY(-8px) scale(1.08);
+
+    box-shadow:0 0 50px rgba(0,217,255,.55);
+
+}
+
+/* ==========================================================
+   CURSOR GLOW
+==========================================================*/
+
+#cursorGlow{
+
+    position:fixed;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(0,217,255,.18),
+
+        transparent 72%
+
+    );
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:0;
+
+    filter:blur(12px);
+
+}
+
+/* ==========================================================
+   RIPPLE EFFECT
+==========================================================*/
+
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    background:rgba(255,255,255,.35);
+
+    animation:ripple .7s linear;
+
+    pointer-events:none;
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================================
+   LINK EFFECT
+==========================================================*/
+
+.footer-menu a,
+
+.footer-contact a,
+
+.pricing-action a{
+
+    position:relative;
+
+}
+
+.footer-menu a::after,
+
+.footer-contact a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-4px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+}
+
+.footer-menu a:hover::after,
+
+.footer-contact a:hover::after{
+
+    width:100%;
+
+}
+/* ==========================================================
+   RESPONSIVE
+==========================================================*/
+
+/* ==========================
+   Laptop
+========================== */
+
+@media (max-width:1200px){
+
+    .pricing-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .why-us .feature-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .popular{
+
+        transform:none;
+
+    }
+
+    .popular:hover{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width:992px){
+
+    .pricing-hero{
+
+        padding-top:150px;
+
+    }
+
+    .pricing-hero h1{
+
+        font-size:52px;
+
+    }
+
+    .comparison-table{
+
+        min-width:850px;
+
+    }
+
+    .cta-box{
+
+        padding:70px 40px;
+
+    }
+
+    .cta-box h2{
+
+        font-size:40px;
+
+    }
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width:768px){
+
+    .pricing-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .why-us .feature-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-brand img{
+
+        margin:0 auto 25px;
+
+    }
+
+    .pricing-hero h1{
+
+        font-size:40px;
+
+    }
+
+    .pricing-hero p{
+
+        font-size:15px;
+
+    }
+
+    .comparison-table{
+
+        min-width:760px;
+
+    }
+
+    .cta-box{
+
+        padding:55px 25px;
+
+    }
+
+    .cta-box h2{
+
+        font-size:32px;
+
+    }
+
+    .cta-action{
+
+        flex-direction:column;
+
+    }
+
+    .cta-action a{
+
+        width:100%;
+
+    }
+
+    .pricing-header h1{
+
+        font-size:38px;
+
+    }
+
+    .pricing-header h3{
+
+        font-size:24px;
+
+    }
+
+    .faq-question{
+
+        font-size:16px;
+
+        padding:22px;
+
+    }
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media (max-width:480px){
+
+    .pricing-hero{
+
+        padding-top:130px;
+
+        padding-bottom:80px;
+
+    }
+
+    .pricing-hero h1{
+
+        font-size:32px;
+
+    }
+
+    .pricing-card{
+
+        padding:25px;
+
+    }
+
+    .pricing-header h1{
+
+        font-size:34px;
+
+    }
+
+    .pricing-header p{
+
+        min-height:auto;
+
+    }
+
+    .comparison-table{
+
+        min-width:700px;
+
+    }
+
+    .footer-brand h2{
+
+        font-size:28px;
+
+    }
+
+    .footer-menu h3,
+
+    .footer-service h3,
+
+    .footer-contact h3{
+
+        font-size:20px;
+
+    }
+
+    #backToTop{
+
+        width:50px;
+
+        height:50px;
+
+        right:18px;
+
+        bottom:18px;
+
+    }
+
+}
+
+/* ==========================================================
+   REDUCE MOTION
+==========================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/* ==================================================
