@@ -84,6 +84,4 @@ VnoCyber H-X/
 ├── manifest.json
 │
 └── assets/
-    ├── images/
-    ├── icons/
-    └── fonts/
+    ├── images
