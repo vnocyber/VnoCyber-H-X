@@ -1,4 +1,4 @@
-# VnoCyber H-X
+VnoCyber H-X
 
 <p align="center">
 
@@ -20,7 +20,7 @@ Cyber Security • Digital Intelligence • Dark Web Research • Privacy • OS
 
 ---
 
-## About
+About
 
 VnoCyber H-X is an independent cybersecurity project focused on exploring the digital world from a security and research perspective.
 
@@ -32,7 +32,7 @@ Cybersecurity is not only about technology—it is about understanding how digit
 
 ---
 
-## Research Areas
+Research Areas
 
 • Cyber Security
 
