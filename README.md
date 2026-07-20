@@ -2,86 +2,98 @@
 
 <p align="center">
 
-<img src="assets/images/logo.png" width="150">
+<img src="assets/images/logo.png" width="180">
 
 </p>
+
+<h1 align="center">
+
+VnoCyber H-X
+
+</h1>
 
 <p align="center">
 
-Premium Pterodactyl Panel Hosting Website
-
-Cyber • Glassmorphism • Futuristic • Responsive
+Cyber Security • Digital Intelligence • Dark Web Research • Privacy • OSINT
 
 </p>
 
 ---
 
-## Tentang
+## About
 
-VnoCyber H-X merupakan website hosting modern yang dibuat untuk menjual layanan **Pterodactyl Panel** dengan tampilan cyber premium, animasi futuristik, serta desain Glassmorphism.
+VnoCyber H-X is an independent cybersecurity project focused on exploring the digital world from a security and research perspective.
 
-Website ini dibuat menggunakan teknologi web murni sehingga ringan, cepat, dan mudah dijalankan di berbagai perangkat.
+Our interests include cyber security, digital forensics, operating systems, network security, cryptography, privacy, cyber intelligence, OSINT, malware research, and the hidden layers of the Internet.
 
----
+The project also studies the structure and history of the Deep Web and Dark Web to better understand how anonymous networks operate, how cyber threats emerge, and how defenders can improve digital security through knowledge and awareness.
 
-# Fitur
-
-- Premium Cyber UI
-- Glassmorphism Design
-- Responsive Desktop & Mobile
-- Particle Background
-- Animated Hero
-- Live Server Dashboard
-- Loading Screen
-- Scroll Progress
-- FAQ Accordion
-- Pricing Comparison
-- WhatsApp Order
-- Telegram Order
-- SEO Ready
-- Fast Loading
-- Modern Animation
+Cybersecurity is not only about technology—it is about understanding how digital systems work, how attacks evolve, and how modern defenses continue to adapt.
 
 ---
 
-# Paket Panel
+## Research Areas
 
-| Paket | RAM |
-|-------|------|
-| Starter | 2 GB |
-| Standard | 3 GB |
-| Premium | 4 GB |
-| Pro | 5 GB |
-| Enterprise | Unlimited |
+• Cyber Security
+
+• Digital Intelligence
+
+• Dark Web Research
+
+• Deep Web
+
+• OSINT
+
+• Digital Privacy
+
+• Malware Analysis
+
+• Threat Intelligence
+
+• Network Security
+
+• Linux
+
+• Programming
+
+• Reverse Engineering
+
+• Cryptography
+
+• Digital Forensics
 
 ---
 
-# Struktur Project
+## Philosophy
 
-```text
-VnoCyber H-X/
-│
-├── index.html
-├── pricing.html
-├── about.html
-├── contact.html
-├── 404.html
-│
-├── style.css
-├── pricing.css
-├── about.css
-├── contact.css
-│
-├── script.js
-├── pricing.js
-├── about.js
-├── contact.js
-│
-├── LICENSE
-├── README.md
-├── robots.txt
-├── sitemap.xml
-├── manifest.json
-│
-└── assets/
-    ├── images
+> "Knowledge reveals the unknown. Responsibility protects the digital world."
+
+Every network has a structure.
+
+Every system has a purpose.
+
+Every technology has two sides.
+
+Understanding them is the first step toward stronger security.
+
+---
+
+## Disclaimer
+
+VnoCyber H-X is dedicated to cybersecurity education, digital awareness, and responsible research.
+
+Any discussion of technologies such as anonymous networks, the Deep Web, or the Dark Web is presented solely for educational and research purposes.
+
+---
+
+## Author
+
+**VnoCyber H-X**
+
+Cyber Security Research
+
+---
+
+## License
+
+MIT License © 2026 VnoCyber H-X
