@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VnoCyber H-X | Premium Pterodactyl Panel Hosting Indonesia</title>
+
+<meta name="description" content="VnoCyber H-X menyediakan Premium Pterodactyl Panel Hosting Indonesia dengan server cepat, stabil, aman, dan support responsif.">
+
+<meta name="keywords" content="Panel Pterodactyl, Hosting Bot WhatsApp, VnoCyber H-X, Hosting Indonesia">
+
+<meta name="author" content="VnoCyber H-X">
+
+<meta name="robots" content="index,follow">
+
+<meta name="theme-color" content="#050816">
+
+<meta property="og:title" content="VnoCyber H-X">
+
+<meta property="og:description" content="Premium Pterodactyl Panel Hosting Indonesia">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="assets/images/logo.png">
+
+<link rel="icon" href="assets/images/logo.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================
+LOADING
+=========================== -->
+
+<div id="loader">
+
+<div class="loader-logo">
+
+<img src="assets/images/logo.png" alt="Logo">
+
+</div>
+
+<h1>
+
+VnoCyber H-X
+
+</h1>
+
+<p>
+
+Initializing Server...
+
+</p>
+
+<div class="loader-bar">
+
+<div class="loader-progress"></div>
+
+</div>
+
+</div>
+
+<!-- ==========================
+PROGRESS BAR
+=========================== -->
+
+<div id="scroll-progress"></div>
+
+<!-- ==========================
+BACKGROUND
+=========================== -->
+
+<div class="grid-bg"></div>
+
+<div class="blur blur-one"></div>
+
+<div class="blur blur-two"></div>
+
+<canvas id="network"></canvas>
+
+<!-- ==========================
+HEADER
+=========================== -->
+
+<header class="vhx-header">
+
+<div class="container">
+
+<a href="#" class="logo">
+
+<img src="assets/images/logo.png" alt="Logo">
+
+<span>
+
+VnoCyber H-X
+
+</span>
+
+</a>
+
+<nav class="navbar">
+
+<a href="#home">Home</a>
+
+<a href="#feature">Feature</a>
+
+<a href="#pricing">Pricing</a>
+
+<a href="#faq">FAQ</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="header-button">
+
+<a href="#pricing" class="btn-primary">
+
+ORDER PANEL
+
+</a>
+
+</div>
+
+<div class="menu-button">
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ==========================
+HOME
+=========================== -->
+
+<section id="home" class="hero">
+
+<div class="container hero-grid">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+
+Premium Hosting Indonesia
+
+</div>
+
+<h1>
+
+Premium <span>Pterodactyl</span><br>
+
+Panel Hosting
+
+</h1>
+
+<p>
+
+VnoCyber H-X menyediakan layanan Panel Pterodactyl berkualitas tinggi untuk Bot WhatsApp, NodeJS, Website, maupun kebutuhan hosting lainnya dengan performa server yang stabil.
+
+</p>
+
+<div class="hero-action">
+
+<a href="#pricing"
+
+class="btn-primary">
+
+Lihat Paket
+
+</a>
+
+<a href="#contact"
+
+class="btn-secondary">
+
+Hubungi Admin
+
+</a>
+
+</div>
+
+<div class="hero-status">
+
+<div class="status-card">
+
+<h3>
+
+99.9%
+
+</h3>
+
+<p>
+
+Server Uptime
+
+</p>
+
+</div>
+
+<div class="status-card">
+
+<h3>
+
+24/7
+
+</h3>
+
+<p>
+
+Support
+
+</p>
+
+</div>
+
+<div class="status-card">
+
+<h3>
+
+SSD NVMe
+
+</h3>
+
+<p>
+
+High Speed
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-visual">
+<!-- ==========================
+SERVER CORE
+=========================== -->
+
+<div class="server-core">
+
+    <div class="core-glow"></div>
+
+    <div class="core-ring ring-one"></div>
+
+    <div class="core-ring ring-two"></div>
+
+    <div class="core-ring ring-three"></div>
+
+    <div class="core-center">
+
+        <img src="assets/images/logo.png" alt="VnoCyber H-X">
+
+    </div>
+
+</div>
+
+<!-- ==========================
+LIVE SERVER DASHBOARD
+=========================== -->
+
+<div class="server-dashboard">
+
+    <div class="dashboard-header">
+
+        <h3>
+
+            LIVE SERVER STATUS
+
+        </h3>
+
+        <span class="online">
+
+            ● ONLINE
+
+        </span>
+
+    </div>
+
+    <div class="dashboard-item">
+
+        <div class="dashboard-title">
+
+            <span>CPU Usage</span>
+
+            <span id="cpuValue">32%</span>
+
+        </div>
+
+        <div class="progress">
+
+            <div class="progress-bar cpu-fill"></div>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-item">
+
+        <div class="dashboard-title">
+
+            <span>RAM Usage</span>
+
+            <span id="ramValue">48%</span>
+
+        </div>
+
+        <div class="progress">
+
+            <div class="progress-bar ram-fill"></div>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-item">
+
+        <div class="dashboard-title">
+
+            <span>Network</span>
+
+            <span id="networkValue">81%</span>
+
+        </div>
+
+        <div class="progress">
+
+            <div class="progress-bar network-fill"></div>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-item">
+
+        <div class="dashboard-title">
+
+            <span>Storage</span>
+
+            <span>NVMe SSD</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+FEATURE
+=========================== -->
+
+<section id="feature" class="feature-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+WHY CHOOSE US
+
+</span>
+
+<h2>
+
+Kenapa Memilih VnoCyber H-X
+
+</h2>
+
+<p>
+
+Hosting panel berkualitas tinggi dengan performa maksimal,
+keamanan terjamin,
+dan dukungan teknis yang siap membantu kapan saja.
+
+</p>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<h3>
+
+Aktivasi Cepat
+
+</h3>
+
+<p>
+
+Panel diaktifkan beberapa menit setelah pembayaran berhasil dikonfirmasi.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+
+SSD NVMe
+
+</h3>
+
+<p>
+
+Menggunakan penyimpanan NVMe untuk kecepatan baca dan tulis yang tinggi.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+
+Unlimited CPU
+
+</h3>
+
+<p>
+
+Seluruh paket memperoleh CPU tanpa pembatasan sehingga performa tetap maksimal.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+
+Keamanan Server
+
+</h3>
+
+<p>
+
+Firewall aktif dan monitoring server dilakukan selama 24 jam.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+
+Support 24/7
+
+</h3>
+
+<p>
+
+Tim VnoCyber H-X siap membantu ketika mengalami kendala.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<h3>
+
+High Uptime
+
+</h3>
+
+<p>
+
+Infrastruktur dirancang agar layanan tetap stabil sepanjang waktu.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+LIVE STATISTICS
+=========================== -->
+
+<section class="statistics">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+LIVE STATISTICS
+
+</span>
+
+<h2>
+
+Statistik Layanan
+
+</h2>
+
+<p>
+
+Data berikut diperbarui secara visual untuk memberikan gambaran kondisi layanan.
+
+</p>
+
+</div>
+
+<div class="statistics-grid">
+
+<div class="statistics-card">
+
+<h3 class="counter" data-target="24">
+
+0
+
+</h3>
+
+<p>
+
+Server Online
+
+</p>
+
+</div>
+
+<div class="statistics-card">
+
+<h3 class="counter" data-target="1250">
+
+0
+
+</h3>
+
+<p>
+
+Client Aktif
+
+</p>
+
+</div>
+
+<div class="statistics-card">
+
+<h3 class="counter" data-target="5800">
+
+0
+
+</h3>
+
+<p>
+
+Panel Dibuat
+
+</p>
+
+</div>
+
+<div class="statistics-card">
+
+<h3>
+
+99.9%
+
+</h3>
+
+<p>
+
+Server Uptime
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+PRICING
+=========================== -->
+
+<section id="pricing" class="pricing">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+PRICING
+
+</span>
+
+<h2>
+
+Pilih Paket Hosting
+
+</h2>
+
+<p>
+
+Harga terjangkau dengan performa server premium.
+
+</p>
+
+</div>
+
+<div class="pricing-grid">
+<!-- ==========================
+PANEL 2 GB
+=========================== -->
+
+<div class="pricing-card">
+
+    <div class="pricing-header">
+
+        <span class="pricing-badge">
+
+            STARTER
+
+        </span>
+
+        <h3>
+
+            PANEL 2 GB
+
+        </h3>
+
+        <h1>
+
+            Rp2.000
+
+        </h1>
+
+        <p>
+
+            Cocok untuk bot WhatsApp ringan.
+
+        </p>
+
+    </div>
+
+    <ul>
+
+        <li>2 GB RAM</li>
+
+        <li>Unlimited CPU</li>
+
+        <li>SSD NVMe</li>
+
+        <li>Bandwidth Unlimited</li>
+
+        <li>Support 24/7</li>
+
+    </ul>
+
+    <div class="pricing-action">
+
+        <a href="https://wa.me/628212165939" class="btn-primary">
+
+            WhatsApp
+
+        </a>
+
+        <a href="https://t.me/vnocyhx" class="btn-secondary">
+
+            Telegram
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+PANEL 3 GB
+=========================== -->
+
+<div class="pricing-card popular">
+
+    <div class="popular-tag">
+
+        PALING LARIS
+
+    </div>
+
+    <div class="pricing-header">
+
+        <span class="pricing-badge">
+
+            RECOMMENDED
+
+        </span>
+
+        <h3>
+
+            PANEL 3 GB
+
+        </h3>
+
+        <h1>
+
+            Rp3.000
+
+        </h1>
+
+        <p>
+
+            Performa stabil untuk penggunaan harian.
+
+        </p>
+
+    </div>
+
+    <ul>
+
+        <li>3 GB RAM</li>
+
+        <li>Unlimited CPU</li>
+
+        <li>SSD NVMe</li>
+
+        <li>Bandwidth Unlimited</li>
+
+        <li>Prioritas Support</li>
+
+    </ul>
+
+    <div class="pricing-action">
+
+        <a href="https://wa.me/628212165939" class="btn-primary">
+
+            WhatsApp
+
+        </a>
+
+        <a href="https://t.me/vnocyhx" class="btn-secondary">
+
+            Telegram
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+PANEL 4 GB
+=========================== -->
+
+<div class="pricing-card">
+
+    <div class="pricing-header">
+
+        <span class="pricing-badge">
+
+            ADVANCED
+
+        </span>
+
+        <h3>
+
+            PANEL 4 GB
+
+        </h3>
+
+        <h1>
+
+            Rp4.000
+
+        </h1>
+
+        <p>
+
+            Direkomendasikan untuk multi bot.
+
+        </p>
+
+    </div>
+
+    <ul>
+
+        <li>4 GB RAM</li>
+
+        <li>Unlimited CPU</li>
+
+        <li>SSD NVMe</li>
+
+        <li>Bandwidth Unlimited</li>
+
+        <li>Support Prioritas</li>
+
+    </ul>
+
+    <div class="pricing-action">
+
+        <a href="https://wa.me/628212165939" class="btn-primary">
+
+            WhatsApp
+
+        </a>
+
+        <a href="https://t.me/vnocyhx" class="btn-secondary">
+
+            Telegram
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+PANEL 5 GB
+=========================== -->
+
+<div class="pricing-card">
+
+    <div class="pricing-header">
+
+        <span class="pricing-badge">
+
+            PRO
+
+        </span>
+
+        <h3>
+
+            PANEL 5 GB
+
+        </h3>
+
+        <h1>
+
+            Rp5.000
+
+        </h1>
+
+        <p>
+
+            Performa tinggi untuk kebutuhan lebih besar.
+
+        </p>
+
+    </div>
+
+    <ul>
+
+        <li>5 GB RAM</li>
+
+        <li>Unlimited CPU</li>
+
+        <li>SSD NVMe</li>
+
+        <li>Bandwidth Unlimited</li>
+
+        <li>Fast Support</li>
+
+    </ul>
+
+    <div class="pricing-action">
+
+        <a href="https://wa.me/628212165939" class="btn-primary">
+
+            WhatsApp
+
+        </a>
+
+        <a href="https://t.me/vnocyhx" class="btn-secondary">
+
+            Telegram
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ==========================
+PANEL UNLIMITED
+=========================== -->
+
+<div class="pricing-card unlimited">
+
+    <div class="pricing-header">
+
+        <span class="pricing-badge">
+
+            PREMIUM
+
+        </span>
+
+        <h3>
+
+            PANEL UNLIMITED
+
+        </h3>
+
+        <h1>
+
+            Rp10.000
+
+        </h1>
+
+        <p>
+
+            Tanpa batas RAM untuk performa maksimal.
+
+        </p>
+
+    </div>
+
+    <ul>
+
+        <li>Unlimited RAM</li>
+
+        <li>Unlimited CPU</li>
+
+        <li>SSD NVMe</li>
+
+        <li>Bandwidth Unlimited</li>
+
+        <li>Premium Support</li>
+
+    </ul>
+
+    <div class="pricing-action">
+
+        <a href="https://wa.me/628212165939" class="btn-primary">
+
+            WhatsApp
+
+        </a>
+
+        <a href="https://t.me/vnocyhx" class="btn-secondary">
+
+            Telegram
+
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+ORDER PROCESS
+=========================== -->
+
+<section class="order-process">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+ORDER PROCESS
+
+</span>
+
+<h2>
+
+Cara Order Panel
+
+</h2>
+
+<p>
+
+Hanya membutuhkan beberapa langkah hingga panel siap digunakan.
+
+</p>
+
+</div>
+
+<div class="process-grid">
+
+<div class="process-card">
+
+<h3>
+
+01
+
+</h3>
+
+<h4>
+
+Pilih Paket
+
+</h4>
+
+<p>
+
+Pilih kapasitas panel sesuai kebutuhan Anda.
+
+</p>
+
+</div>
+
+<div class="process-card">
+
+<h3>
+
+02
+
+</h3>
+
+<h4>
+
+Hubungi Admin
+
+</h4>
+
+<p>
+
+Lakukan pemesanan melalui WhatsApp atau Telegram.
+
+</p>
+
+</div>
+
+<div class="process-card">
+
+<h3>
+
+03
+
+</h3>
+
+<h4>
+
+Lakukan Pembayaran
+
+</h4>
+
+<p>
+
+Selesaikan pembayaran menggunakan metode yang tersedia.
+
+</p>
+
+</div>
+
+<div class="process-card">
+
+<h3>
+
+04
+
+</h3>
+
+<h4>
+
+Panel Aktif
+
+</h4>
+
+<p>
+
+Panel akan dibuat dan dikirim setelah pembayaran dikonfirmasi.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================
+TESTIMONIAL
+=========================== -->
+
+<section class="testimonial">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+TESTIMONIAL
+
+</span>
+
+<h2>
+
+Dipercaya Banyak Pengguna
+
+</h2>
+
+<p>
+
+Beberapa ulasan dari pengguna layanan VnoCyber H-X.
+
+</p>
+
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<div class="quote">
+
+"
+
+</div>
+
+<p>
+
+Panel aktif sangat cepat, server stabil, dan tidak pernah mengalami kendala selama digunakan.
+
+</p>
+
+<h4>
+
+Client #001
+
+</h4>
+
+<span>
+
+WhatsApp Bot Developer
+
+</span>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="quote">
+
+"
+
+</div>
+
+<p>
+
+Harga murah tetapi kualitas server sangat baik. Support juga cepat membalas.
+
+</p>
+
+<h4>
+
+Client #002
+
+</h4>
+
+<span>
+
+NodeJS Developer
+
+</span>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="quote">
+
+"
+
+</div>
+
+<p>
+
+Sudah berlangganan cukup lama. Sampai sekarang performa server tetap konsisten.
+
+</p>
+
+<h4>
+
+Client #003
+
+</h4>
+
+<span>
+
+Bot Hosting
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+FAQ
+=========================== -->
+
+<section id="faq" class="faq">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+FAQ
+
+</span>
+
+<h2>
+
+Pertanyaan Yang Sering Ditanyakan
+
+</h2>
+
+<p>
+
+Jawaban singkat mengenai layanan VnoCyber H-X.
+
+</p>
+
+</div>
+
+<div class="faq-list">
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Berapa lama proses aktivasi panel?
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+Aktivasi biasanya membutuhkan waktu sekitar 5–15 menit setelah pembayaran berhasil dikonfirmasi.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Apakah panel dapat di-upgrade?
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+Ya. Upgrade dapat dilakukan kapan saja tanpa kehilangan data yang sudah ada.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Metode pembayaran apa saja?
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+QRIS, DANA, GoPay, SeaBank, Transfer Bank, dan metode pembayaran lainnya.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Apakah server online selama 24 jam?
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+Ya. Infrastruktur kami dipantau selama 24 jam agar layanan tetap stabil.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+CONTACT
+=========================== -->
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+CONTACT
+
+</span>
+
+<h2>
+
+Hubungi Kami
+
+</h2>
+
+<p>
+
+Silakan hubungi admin melalui WhatsApp atau Telegram untuk melakukan pemesanan panel.
+
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<a href="https://wa.me/628212165939"
+
+target="_blank"
+
+class="contact-card">
+
+<h3>
+
+WhatsApp
+
+</h3>
+
+<p>
+
+Order Panel
+
+</p>
+
+</a>
+
+<a href="https://t.me/vnocyhx"
+
+target="_blank"
+
+class="contact-card">
+
+<h3>
+
+Telegram
+
+</h3>
+
+<p>
+
+Customer Support
+
+</p>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+CALL TO ACTION
+=========================== -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>
+
+Siap Menjalankan Bot 24 Jam?
+
+</h2>
+
+<p>
+
+Gunakan layanan Premium Pterodactyl Panel Hosting dari VnoCyber H-X dan nikmati server yang cepat, stabil, serta dukungan yang responsif.
+
+</p>
+
+<div class="cta-action">
+
+<a href="https://wa.me/628212165939"
+
+class="btn-primary">
+
+Order Sekarang
+
+</a>
+
+<a href="pricing.html"
+
+class="btn-secondary">
+
+Lihat Harga
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================
+FOOTER
+=========================== -->
+
+<footer class="vhx-footer">
+
+<div class="container footer-grid">
+
+<div class="footer-brand">
+
+<img src="assets/images/logo.png"
+
+alt="VnoCyber H-X">
+
+<h2>
+
+VnoCyber H-X
+
+</h2>
+
+<p>
+
+Premium Pterodactyl Panel Hosting Indonesia
+yang menghadirkan server cepat,
+stabil,
+aman,
+dan didukung layanan pelanggan yang responsif.
+
+</p>
+
+</div>
+
+<div class="footer-menu">
+
+<h3>
+
+Menu
+
+</h3>
+
+<a href="#home">
+
+Home
+
+</a>
+
+<a href="#feature">
+
+Feature
+
+</a>
+
+<a href="#pricing">
+
+Pricing
+
+</a>
+
+<a href="#faq">
+
+FAQ
+
+</a>
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+</div>
+
+<div class="footer-service">
+
+<h3>
+
+Layanan
+
+</h3>
+
+<p>
+
+Panel Pterodactyl
+
+</p>
+
+<p>
+
+Hosting Bot WhatsApp
+
+</p>
+
+<p>
+
+NodeJS Hosting
+
+</p>
+
+<p>
+
+Website Hosting
+
+</p>
+
+<p>
+
+Technical Support
+
+</p>
+
+</div>
+
+<div class="footer-contact">
+
+<h3>
+
+Hubungi Kami
+
+</h3>
+
+<a href="https://wa.me/628212165939"
+
+target="_blank">
+
+WhatsApp
+
+</a>
+
+<a href="https://t.me/vnocyhx"
+
+target="_blank">
+
+Telegram
+
+</a>
+
+<a href="mailto:admin@vnocyber.com">
+
+Email
+
+</a>
+
+<p>
+
+Support Online 24 Jam
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 VnoCyber H-X.
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- ==========================
+BACK TO TOP
+=========================== -->
+
+<button id="backToTop">
+
+<svg width="22"
+
+height="22"
+
+viewBox="0 0 24 24"
+
+fill="none"
+
+xmlns="http://www.w3.org/2000/svg">
+
+<path d="M12 5L5 12H9V19H15V12H19L12 5Z"
+
+fill="currentColor"/>
+
+</svg>
+
+</button>
+
+<!-- ==========================
+CURSOR GLOW
+=========================== -->
+
+<div id="cursorGlow"></div>
+
+<!-- ==========================
+SCRIPT
+=========================== -->
+
+<script src="script.js"></script>
+<!-- ==========================
+END OF PAGE
+=========================== -->
+
+</body>
+
+  </html>
